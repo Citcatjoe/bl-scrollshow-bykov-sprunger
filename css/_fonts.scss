@@ -1,0 +1,100 @@
+h1
+{
+    font-family: 'caprasimo';
+    //text-shadow: 0 2px 6px rgba(0, 0, 0, .6) !important;
+}
+
+h2 
+{
+    font-family: poppins;
+}
+
+.surtitre
+{
+    font-size: 18px !important;
+    line-height: 20px !important;   
+    
+    @include breakpoint(min, medium) {
+        font-size: 28px !important;
+        line-height: 26px !important;  
+    }; 
+}
+
+
+h3 
+{
+    font-family: 'caprasimo';
+    font-size: 40px !important;
+    line-height: 90%;
+
+    @include breakpoint(min, medium) {
+        font-family: 'caprasimo';
+        font-size: 70px !important;
+        line-height: 90%;
+    }; 
+}
+
+#onetrust-consent-sdk h3,
+#ot-dpd-title,
+#ot-dpd-title
+{
+    font-size: inherit!important;
+}
+
+h4
+{
+    font-family: 'caprasimo';
+    font-size: 20px !important;
+
+    @include breakpoint(min, medium) {
+        font-family: 'caprasimo';
+        font-size: 26px !important;
+    }; 
+}
+
+h5
+{
+    font-family: 'caprasimo';
+}
+
+.intro p
+{
+    font-family: poppins;
+    color: #ffffff;
+}
+
+.credits p
+{
+    font-family: poppins;
+}
+
+p
+{
+    font-family: Poppins;
+    //font-size: 20px ;
+    font-weight: 300;
+    line-height: 1.625 !important;
+}
+
+blockquote
+{
+    font-family: poppins;
+}
+
+.lettrine:first-letter
+{
+    
+    font-size: 570%;
+    font-weight: 600;
+    //border : 1px solid red;
+    float : left;
+    margin-top:5px;
+    line-height: 0.7;
+    margin-right: 10px;
+    
+}
+
+.share
+{
+    font-family: poppins;
+}

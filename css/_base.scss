@@ -1,0 +1,450 @@
+body
+{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+
+    &.is-visible
+    {
+        opacity: 1;
+        visibility: visible;
+        transition: all .4s;
+    }
+}
+
+.container
+{
+    margin: auto;
+}
+
+.mb-custom-p
+{
+    margin-bottom: 100vh;
+}
+
+.mb-custom-section
+{
+    margin-bottom: 80vh;
+}
+
+.bg-custom-textbox
+{
+    //background: rgba(0, 0, 0, .5);
+}
+
+.border-custom-textbox
+{
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, .2);
+}
+
+.bamboule
+{
+    //font-size: 3rem;
+    //font-weight: 600;
+    //border : 1px solid red;
+    //float : left;
+    //margin-top:5px;
+    //line-height: 0.7;
+    //margin-right: 0;
+    //margin-bottom:10px;
+    font-family: 'caprasimo';
+    //transform: rotate(-15deg);
+}
+
+section
+{
+   //min-height: 100vh; 
+}
+
+section.title,
+section.credits
+{
+    height: 100vh ;
+   
+}
+
+// section.section1
+// {
+//     height: 1px;
+// }
+
+.gradient 
+{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8));
+    @include breakpoint(min, medium) {
+        background-image: linear-gradient(-120deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4))
+    }; 
+}
+.gradient2
+{
+    background: linear-gradient(-45deg, #ee7752, #B10DC9, #13abdb, #23d5ab);
+    //background: linear-gradient(-45deg, #81402c, #5c0869, #0a5167, #105a49);
+	background-size: 200% 200%;
+	animation: gradient 15s ease infinite;
+    opacity: 0.7;
+
+
+    // background-image: linear-gradient(45deg, darken(#13abdb,5%), #B10DC9);
+    // opacity: .75;
+}
+
+.swiper-slide {
+    opacity: 0!important;
+  }
+  
+  .swiper-slide-active {
+    opacity: 1!important;
+  }
+
+// .swiper-slide
+// {
+//     -webkit-backface-visibility: hidden; 
+// -webkit-transform: translate3d(0, 0, 0) !important;
+
+// }
+// .swiper-slide:not(.swiper-slide-visible)
+// {
+//     display: none;
+// }
+
+.swiper-slide { -webkit-transform: translateZ(0); -o-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -webkit-backface-visibility:hidden; transform: translateZ(0); } .swiper-wrapper { -webkit-backface-visibility:hidden; -webkit-transform-style: preserve-3d; }
+
+body {
+    min-height: 100vh;
+    min-height: fill-available;
+    min-height: -webkit-fill-available;
+}
+html {
+    height: fill-available;
+    height: -webkit-fill-available;
+}
+
+.swiper
+{
+    height: 100vh;
+    min-height: fill-available;
+    min-height: -webkit-fill-available;
+}
+
+.bg
+{
+    //background: transparent;
+        background:rgba(0, 0, 0, .6);
+
+
+        // border-width: 4px;
+        // border-style: solid;
+        // border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+        // border-radius: 30px !important;
+
+        // background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .1)) padding-box,
+        // linear-gradient(to right, rgb(0, 0, 59), rgb(48, 16, 65)) border-box;
+        // border-radius: 50em;
+        // border: 5px solid transparent;
+    
+}
+
+section.section00 .textbox,
+section.section10 .textbox
+{
+    background: transparent;
+}
+
+// .text-container
+// {
+//     height: 100vh;
+//     min-height: fill-available;
+//     min-height: -webkit-fill-available;
+// }
+
+// .lol
+// {
+//     opacity: .5;
+// }
+
+//DUO
+#swiper-slide-00
+{
+    background-position: 73% bottom;
+    background-image: url('../img/this/intro_mobile3.jpg') !important;
+
+    @include breakpoint(min, medium) {
+        background-position: left center;
+        background-image: url('../img/this/intro_desktop.jpg') !important;
+    }; 
+}
+
+//BAMBOULEEEEEE
+#swiper-slide-01
+{
+    background-position: 45% center;
+    background-image: url('../img/this/dr_jm_x.jpg') !important;
+
+    @include breakpoint(min, medium) {
+        background-position: center;
+        background-image: url('../img/this/dr_jm_b.jpg') !important;
+    }; 
+}
+
+//DE LA STAR
+#swiper-slide-02
+{
+    background-position: 5% center;
+
+    @include breakpoint(min, medium) {
+        background-position: center;
+    }; 
+}
+
+// //DUO VIEUX
+// #swiper-slide-03
+// {
+//     background-position: 60% center;
+
+//     @include breakpoint(min, medium) {
+//         background-position: right center;
+//     }; 
+// }
+
+// //MANO
+// #swiper-slide-04
+// {
+//     background-position: 35% center;
+
+//     @include breakpoint(min, medium) {
+//         background-position: right center;
+//     }; 
+// }
+
+//CHARLE T 1
+#swiper-slide-03
+{
+    // background-image:url('../img/this/ski_6.jpg');
+    background-position: 25% center;
+
+    @include breakpoint(min, medium) {
+        background-position: center;
+    }; 
+}
+
+//CHARLE T 2
+#swiper-slide-04
+{
+    background-position: 55% center;
+
+    @include breakpoint(min, medium) {
+        background-position: left center;
+    }; 
+}
+
+//RAVI 1
+#swiper-slide-05
+{
+    // background-image:url('../img/this/ski_8.jpg');
+    background-position: 80% center;
+
+    @include breakpoint(min, medium) {
+        background-position: center;
+    }; 
+}
+
+//RAVI 2
+#swiper-slide-06
+{
+    background-position: left center;
+
+    @include breakpoint(min, medium) {
+        background-position: left center;
+    }; 
+}
+
+//RAVI 3
+#swiper-slide-07
+{
+    // background-image:url('../img/this/ski_10.jpg');
+    background-position: left center;
+
+    @include breakpoint(min, medium) {
+        background-position: left bottom;
+    }; 
+}
+
+//NEIL 1
+#swiper-slide-08
+{
+    background-position: 60% center;
+
+    @include breakpoint(min, medium) {
+        background-position: left top;
+    }; 
+}
+
+//NEIL 2
+#swiper-slide-09
+{
+    background-position: 50% center;
+
+    @include breakpoint(min, medium) {
+        background-position: center;
+    }; 
+}
+
+//EICHER 1
+#swiper-slide-10
+{
+    background-position: 55% center;
+
+    @include breakpoint(min, medium) {
+        background-position: center top;
+    }; 
+}
+
+//EICHER 2
+#swiper-slide-11
+{
+    background-position: 60% center;
+
+    @include breakpoint(min, medium) {
+        background-position: left top;
+    }; 
+}
+
+//EICHER 3
+#swiper-slide-12
+{
+    background-position: 18% center;
+
+    @include breakpoint(min, medium) {
+        background-position: center bottom;
+    }; 
+}
+
+//NOIR DES
+#swiper-slide-13
+{
+    background-position: 8% center;
+
+    @include breakpoint(min, medium) {
+        background-position: left bottom;
+    }; 
+}
+
+//NEIL 2
+#swiper-slide-14
+{
+    background-position: 50% center;
+
+    @include breakpoint(min, medium) {
+        background-position: center;
+    }; 
+}
+
+//JOAN 1
+#swiper-slide-15
+{
+    background-position: 55% center;
+
+    @include breakpoint(min, medium) {
+        background-position: center;
+    }; 
+}
+
+//JOAN 2
+#swiper-slide-16
+{
+    background-position: 68% center;
+
+    @include breakpoint(min, medium) {
+        background-position: center;
+    }; 
+}
+
+//PAUL SIMON
+#swiper-slide-17
+{
+    background-position: 68% center;
+
+    @include breakpoint(min, medium) {
+        background-position: center bottom;
+    }; 
+}
+
+//STROM 1
+#swiper-slide-18
+{
+    background-position: 68% center;
+
+    @include breakpoint(min, medium) {
+        background-position: center bottom;
+    }; 
+}
+
+//STROM 2
+#swiper-slide-19
+{
+    background-position: right center;
+
+    @include breakpoint(min, medium) {
+        background-position: center;
+    }; 
+}
+
+//STROM 3
+#swiper-slide-20
+{
+    background-position: 68% center;
+
+    @include breakpoint(min, medium) {
+        background-position: left top;
+    }; 
+}
+
+//DJAMEL 1
+#swiper-slide-21
+{
+    background-position: 15% center;
+
+    @include breakpoint(min, medium) {
+        background-position: right bottom;
+    }; 
+}
+
+//DJAMEL 2
+#swiper-slide-22
+{
+    background-position: 25% center;
+
+    @include breakpoint(min, medium) {
+        background-position: right center;
+    }; 
+}
+
+//jamel duo
+#swiper-slide-23
+{
+    background-position: 35% center;
+
+    @include breakpoint(min, medium) {
+        background-position: right center;
+    }; 
+}
+
+//CREDITS
+#swiper-slide-24
+{
+    background-position: 75% center;
+
+    @include breakpoint(min, medium) {
+        background-position: right center;
+    }; 
+}
+
+.mouse 
+{
+    margin: auto;
+    @include breakpoint(min, medium) {
+        margin: initial;
+    }; 
+}
+
