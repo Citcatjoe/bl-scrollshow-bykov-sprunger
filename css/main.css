@@ -4,7 +4,8 @@
 }
 
 h1 {
-  font-family: "caprasimo";
+  font-family: "Montserrat";
+  font-weight: 700 !important;
 }
 
 h2 {
@@ -22,17 +23,40 @@ h2 {
   }
 }
 
+.label {
+  position: absolute;
+  top: -10px;
+  left: 25px;
+  background: white;
+  padding: 0 5px 1px 8px;
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+  text-transform: uppercase;
+  transform: rotate(-10deg);
+}
+
 h3 {
-  font-family: "caprasimo";
   font-size: 40px !important;
   line-height: 90%;
 }
 @media (min-width: 768px) {
   h3 {
-    font-family: "caprasimo";
-    font-size: 70px !important;
+    font-family: "Oswald";
+    font-style: italic;
+    font-size: 50px !important;
+    font-weight: 900 !important;
     line-height: 90%;
   }
+}
+h3 span {
+  display: block;
+  margin-top: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  text-shadow: none;
 }
 
 #onetrust-consent-sdk h3,
@@ -57,18 +81,32 @@ h5 {
 }
 
 .intro p {
-  font-family: poppins;
+  font-style: normal;
   color: #ffffff;
 }
 
 .credits p {
-  font-family: poppins;
+  font-style: normal;
 }
 
 p {
-  font-family: Poppins;
-  font-weight: 300;
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 400;
   line-height: 1.625 !important;
+}
+p b {
+  font-weight: 700;
+}
+p b.ab {
+  color: #e40521;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+p b.js {
+  color: #007fcd;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
 }
 
 blockquote {
@@ -459,20 +497,24 @@ section.credits {
   height: 100vh;
 }
 
-.gradient {
+.overlay-black {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
 }
 @media (min-width: 768px) {
-  .gradient {
-    background-image: linear-gradient(-120deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  .overlay-black {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0));
   }
 }
 
-.gradient2 {
+.overlay-color {
   background: linear-gradient(-45deg, #ee7752, #B10DC9, #13abdb, #23d5ab);
   background-size: 200% 200%;
   animation: gradient 15s ease infinite;
   opacity: 0.7;
+}
+
+.border-l-custom {
+  border-width: 0 0 0 10px;
 }
 
 .swiper-slide {
@@ -529,7 +571,7 @@ section.section10 .textbox {
 }
 @media (min-width: 768px) {
   #swiper-slide-00 {
-    background-position: left center;
+    background-position: center center;
     background-image: url("../img/this/intro_desktop.jpg") !important;
   }
 }
@@ -540,8 +582,8 @@ section.section10 .textbox {
 }
 @media (min-width: 768px) {
   #swiper-slide-01 {
-    background-position: center;
-    background-image: url("../img/this/dr_jm_b.jpg") !important;
+    background-position: center center;
+    background-image: url("../img/this/sprunger_intro.jpg") !important;
   }
 }
 
@@ -577,7 +619,7 @@ section.section10 .textbox {
 }
 @media (min-width: 768px) {
   #swiper-slide-05 {
-    background-position: center;
+    background-position: left center;
   }
 }
 
@@ -586,7 +628,7 @@ section.section10 .textbox {
 }
 @media (min-width: 768px) {
   #swiper-slide-06 {
-    background-position: left center;
+    background-position: right center;
   }
 }
 
@@ -595,7 +637,7 @@ section.section10 .textbox {
 }
 @media (min-width: 768px) {
   #swiper-slide-07 {
-    background-position: left bottom;
+    background-position: left center;
   }
 }
 
@@ -604,7 +646,7 @@ section.section10 .textbox {
 }
 @media (min-width: 768px) {
   #swiper-slide-08 {
-    background-position: left top;
+    background-position: right top;
   }
 }
 
@@ -613,7 +655,7 @@ section.section10 .textbox {
 }
 @media (min-width: 768px) {
   #swiper-slide-09 {
-    background-position: center;
+    background-position: left center;
   }
 }
 
@@ -631,7 +673,7 @@ section.section10 .textbox {
 }
 @media (min-width: 768px) {
   #swiper-slide-11 {
-    background-position: left top;
+    background-position: left center;
   }
 }
 
@@ -640,7 +682,7 @@ section.section10 .textbox {
 }
 @media (min-width: 768px) {
   #swiper-slide-12 {
-    background-position: center bottom;
+    background-position: center top;
   }
 }
 
@@ -649,7 +691,7 @@ section.section10 .textbox {
 }
 @media (min-width: 768px) {
   #swiper-slide-13 {
-    background-position: left bottom;
+    background-position: left top;
   }
 }
 
@@ -658,7 +700,7 @@ section.section10 .textbox {
 }
 @media (min-width: 768px) {
   #swiper-slide-14 {
-    background-position: center;
+    background-position: right center;
   }
 }
 
@@ -667,7 +709,7 @@ section.section10 .textbox {
 }
 @media (min-width: 768px) {
   #swiper-slide-15 {
-    background-position: center;
+    background-position: left center;
   }
 }
 
@@ -685,7 +727,7 @@ section.section10 .textbox {
 }
 @media (min-width: 768px) {
   #swiper-slide-17 {
-    background-position: center bottom;
+    background-position: center top;
   }
 }
 
@@ -760,3 +802,5 @@ section.section10 .textbox {
     margin: initial;
   }
 }
+
+/*# sourceMappingURL=main.css.map */

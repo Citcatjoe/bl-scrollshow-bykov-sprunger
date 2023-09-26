@@ -6,28 +6,21 @@
 	<head>
 		
 		<!-- OneTrust Cookies Consent Notice start for blick.ch -->
-		<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="d57e5842-f42f-46bc-a4ea-4a82bd82322c" ></script>
+		{# <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="d57e5842-f42f-46bc-a4ea-4a82bd82322c" ></script>
 		<script type="text/javascript">
-		function OptanonWrapper() { }
-		</script>
+		function OptanonWrapper() { } 
+		</script> #}
 		<!-- OneTrust Cookies Consent Notice end for blick.ch --> 
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,800&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Source+Sans+3:wght@300;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 		<link rel="stylesheet" href="css/main.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 		{# <?php include 'hb_card_tp.php'; ?> #}
-		{{ block('head_brand') }}
+		{{ block('head_brand') }} 
 	</head>
 
 	{% raw %}  
@@ -35,8 +28,8 @@
 			{{#each slide}}
 			<div id="swiper-slide-{{indexFormatter @index}}" class="swiper-slide bg-cover relative" style="{{#if bgColor}}background:{{bgColor}}{{else}}background-image:url('{{bgUrl}}'){{/if}}">
 				<!-- <div class="gradient absolute w-full h-full md:h-1/2 bottom-0"></div> -->
-				{{#if overlay}}<div class="gradient2 w-full absolute top-0 right-0- bottom-0 left-0"></div>{{/if}}
-				{{#if overlay2}}<div class="gradient absolute w-full top-1/2 md:top-0 right-0 bottom-0 left-0 bg-red"></div>{{/if}}
+				{{#if overlayBlack}}<div class="overlay-black w-full absolute top-0 right-0- bottom-0 left-0"></div>{{/if}}
+				{{#if overlayColor}}<div class="overlay-color absolute w-full top-1/2 md:top-0 right-0 bottom-0 left-0 bg-red"></div>{{/if}}
 			</div>
 			{{/each}}
 		</script>
@@ -70,11 +63,11 @@
 				{{else}}
 				
 				<!-- CONTENT NORMAL -->
-				<section class="container max-w-6xl overflow-auto relative mb-custom-section">
-					<div class="{{colClasses}}">
-						<p class="surtitre text-white inline-block px-2 rounded-full font-bold italic" style="background-color: {{color}};">{{{field1}}}</p>
-						<h3 class="text-white mt-4 md:mt-6 mb-2" style="text-shadow: 5px 5px {{color}};">{{{field2}}}</h3>
-						<h4 class="text-white mb-4 md:mb-10" style="text-shadow: 3px 3px black;">{{{field3}}}</h4>
+				<section class="container max-w-6xl overflow-auto relative mb-custom-section pt-6">
+					<div class="{{colClasses}} bg " style="border-color: {{color}}">
+						<span class="label">{{who}}</span>
+						<h3 class="text-white mt-6 mb-10" style="text-shadow: 3px 3px {{color}};">{{{field2}}}</h3>
+						{{#if field3}}<h4 class="text-white mb-4 md:mb-10" style="text-shadow: 3px 3px black;">{{{field3}}}</h4>{{/if}}
 
 
 						
@@ -83,7 +76,7 @@
 						<p class="text-white leading-relaxed text-base md:text-xl ">{{textAlt}}</p>
 						{{else}}
 						
-						<p class="bg text-white text-base md:text-xl rounded-xl md:rounded-3xl border-4 p-3 md:p-6 mx-0 md:-mx-6" style="border-color: {{color}}">{{{text}}}</p>
+						<p class="text-white text-base md:text-xl p-3 md:p-6 mx-0 md:-mx-6">{{{text}}}</p>
 						{{/if}}
 					</div>
 					<div id="trigger{{indexFormatter @index}}" class="trigger absolute top-8 w-full h-1"></div>

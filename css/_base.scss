@@ -69,14 +69,15 @@ section.credits
 //     height: 1px;
 // }
 
-.gradient 
+.overlay-black 
 {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8));
     @include breakpoint(min, medium) {
-        background-image: linear-gradient(-120deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4))
+        //background-image: linear-gradient(90deg, rgb(255, 0, 0), rgb(255, 242, 0))
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0))
     }; 
 }
-.gradient2
+.overlay-color
 {
     background: linear-gradient(-45deg, #ee7752, #B10DC9, #13abdb, #23d5ab);
     //background: linear-gradient(-45deg, #81402c, #5c0869, #0a5167, #105a49);
@@ -87,6 +88,12 @@ section.credits
 
     // background-image: linear-gradient(45deg, darken(#13abdb,5%), #B10DC9);
     // opacity: .75;
+}
+
+.border-l-custom
+{
+    border-width: 0 0 0 10px;
+    
 }
 
 .swiper-slide {
@@ -170,7 +177,7 @@ section.section10 .textbox
     background-image: url('../img/this/intro_mobile3.jpg') !important;
 
     @include breakpoint(min, medium) {
-        background-position: left center;
+        background-position: center center;
         background-image: url('../img/this/intro_desktop.jpg') !important;
     }; 
 }
@@ -182,8 +189,8 @@ section.section10 .textbox
     background-image: url('../img/this/dr_jm_x.jpg') !important;
 
     @include breakpoint(min, medium) {
-        background-position: center;
-        background-image: url('../img/this/dr_jm_b.jpg') !important;
+        background-position: center center;
+        background-image: url('../img/this/sprunger_intro.jpg') !important;
     }; 
 }
 
@@ -245,7 +252,7 @@ section.section10 .textbox
     background-position: 80% center;
 
     @include breakpoint(min, medium) {
-        background-position: center;
+        background-position: left center;
     }; 
 }
 
@@ -255,7 +262,7 @@ section.section10 .textbox
     background-position: left center;
 
     @include breakpoint(min, medium) {
-        background-position: left center;
+        background-position: right center;
     }; 
 }
 
@@ -266,7 +273,7 @@ section.section10 .textbox
     background-position: left center;
 
     @include breakpoint(min, medium) {
-        background-position: left bottom;
+        background-position: left center;
     }; 
 }
 
@@ -276,7 +283,7 @@ section.section10 .textbox
     background-position: 60% center;
 
     @include breakpoint(min, medium) {
-        background-position: left top;
+        background-position: right top;
     }; 
 }
 
@@ -286,7 +293,7 @@ section.section10 .textbox
     background-position: 50% center;
 
     @include breakpoint(min, medium) {
-        background-position: center;
+        background-position: left center; 
     }; 
 }
 
@@ -306,7 +313,7 @@ section.section10 .textbox
     background-position: 60% center;
 
     @include breakpoint(min, medium) {
-        background-position: left top;
+        background-position: left center;
     }; 
 }
 
@@ -316,7 +323,7 @@ section.section10 .textbox
     background-position: 18% center;
 
     @include breakpoint(min, medium) {
-        background-position: center bottom;
+        background-position: center top;
     }; 
 }
 
@@ -326,7 +333,7 @@ section.section10 .textbox
     background-position: 8% center;
 
     @include breakpoint(min, medium) {
-        background-position: left bottom;
+        background-position: left top;
     }; 
 }
 
@@ -336,17 +343,17 @@ section.section10 .textbox
     background-position: 50% center;
 
     @include breakpoint(min, medium) {
-        background-position: center;
+        background-position: right center;
     }; 
 }
 
 //JOAN 1
 #swiper-slide-15
 {
-    background-position: 55% center;
+    background-position: 55% center; 
 
     @include breakpoint(min, medium) {
-        background-position: center;
+        background-position: left center;
     }; 
 }
 
@@ -366,7 +373,7 @@ section.section10 .textbox
     background-position: 68% center;
 
     @include breakpoint(min, medium) {
-        background-position: center bottom;
+        background-position: center top;
     }; 
 }
 
