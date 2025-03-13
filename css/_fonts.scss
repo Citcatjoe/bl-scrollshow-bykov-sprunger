@@ -1,6 +1,6 @@
 h1
 {
-    font-family: 'Montserrat';
+    font-family: 'Poppins';
     font-weight: 700 !important;
     //text-transform: uppercase;
     //text-shadow: 0 2px 6px rgba(0, 0, 0, .6) !important;
@@ -25,31 +25,38 @@ h2
 .label
 {
     position: absolute;
-    top:-10px;
+    top:-15px;
     left: 25px;
     background: white;
     padding: 0 5px 1px 8px;
     font-family: Oswald;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     color: black;
     text-transform: uppercase;
     transform: rotate(-10deg);
+
+    @include breakpoint(min, medium) {
+        top:-15px;
+        font-size: 24px;
+    }; 
 }
 
 
 h3 
 {
    
-    font-size: 40px !important;
-    line-height: 90%;
+    font-size: 30px !important;
+    font-family: 'Oswald';
+    font-weight: 900 !important;
+    line-height: 100%;
+    font-style: italic;
 
     @include breakpoint(min, medium) {
-        font-family: 'Oswald';
-        font-style: italic;
+        
         font-size: 50px !important;
-        font-weight: 900 !important;
-        line-height: 90%;
+        
+        
     
     }; 
 
@@ -84,7 +91,7 @@ h4
 
 h5
 {
-    font-family: 'caprasimo';
+    font-weight: 700 !important;
 }
 
 .intro p
@@ -101,10 +108,9 @@ h5
 p
 {
     
-    font-family: Montserrat;
-    font-style: italic;
+    //font-style: italic;
     //font-size: 20px ;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 1.625 !important;
 
     b 
@@ -120,7 +126,6 @@ p
 
 blockquote
 {
-    font-family: poppins;
 }
 
 .lettrine:first-letter
@@ -138,5 +143,12 @@ blockquote
 
 .share
 {
-    font-family: poppins;
 }
+
+.sport
+{
+    font-family: Oswald;
+    font-weight: 500 !important;
+}
+
+br { line-height: 50% }
